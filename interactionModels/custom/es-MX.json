@@ -1,0 +1,70 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hola",
+            "como estás",
+            "di hola mundo",
+            "di hola",
+            "hola mundo"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "producto",
+              "type": "Tipo"
+            }
+          ],
+          "name": "GetProductInfoIntent",
+          "samples": [
+            "me interesa {producto}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "frutales"
+              }
+            },
+            {
+              "name": {
+                "value": "pasteles"
+              }
+            },
+            {
+              "name": {
+                "value": "gelatinas"
+              }
+            }
+          ],
+          "name": "Tipo"
+        }
+      ],
+      "invocationName": "change me"
+    }
+  }
+}
